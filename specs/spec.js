@@ -10,6 +10,9 @@ describe('Enter name Feature',function(){
         //driver.findElement(By.locator).sendKeys() in Java
         element(by.model('yourName')).sendKeys('Sopan');
 
+        //added wait
+        browser.driver.sleep(3000);
+
         //Declaring Variable
         var text=element(by.xpath('/html/body/div[2]/div[1]/div[2]/div[2]/div/h1'));
 
