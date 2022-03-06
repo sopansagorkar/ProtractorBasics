@@ -19,3 +19,15 @@ describe('Enter name Feature',function(){
 
     });
 });
+
+describe('Title Test',function(){
+
+    it('get title test',function(){
+
+        //As google is noy built in AngularJS , we are disabling Angular check for browser
+        browser.waitForAngularEnabled(false);
+        browser.get('https://www.google.com');
+        expect(browser.getTitle()).toEqual('Google');
+
+    });
+});
