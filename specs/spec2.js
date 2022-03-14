@@ -8,6 +8,7 @@ describe('Multiple scenarios',function(){
 
     beforeEach(function(){
         browser.get('https://juliemr.github.io/protractor-demo/');
+        browser.driver.manage().window().maximize();
     });
 
     it('verify Title',function(){

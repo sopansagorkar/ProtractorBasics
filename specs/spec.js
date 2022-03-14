@@ -6,6 +6,9 @@ describe('Enter name Feature', function () {
         //driver.get() in Java
         browser.get('https://angularjs.org/');
 
+        //Maximize window
+        browser.driver.manage().window().maximize();
+
         //driver.findElement(By.locator).sendKeys() in Java
         element(by.model('yourName')).sendKeys('Sopan');
 
@@ -25,7 +28,7 @@ describe('Enter name Feature', function () {
 describe('Title Test', function () {
 
     it('get title test', function () {
-
+        //Set-ExecutionPolicy RemoteSigned
         //As google is noy built in AngularJS , we are disabling Angular check for browser
         browser.waitForAngularEnabled(false);
         browser.ignoreSynchronization = true;
