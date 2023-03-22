@@ -29,7 +29,7 @@ describe('Title Test', function () {
 
     it('get title test', function () {
         //Set-ExecutionPolicy RemoteSigned
-        //As google is noy built in AngularJS , we are disabling Angular check for browser
+        //As google is not built in AngularJS , we are disabling Angular check for browser
         browser.waitForAngularEnabled(false);
         browser.ignoreSynchronization = true;
         browser.get('https://www.google.com');
